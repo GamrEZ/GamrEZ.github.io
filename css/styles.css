@@ -10,7 +10,12 @@
 
 body {
     background-color: #252222;
+
     color: #dadddd;
+
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 1) 0%, rgba(41, 41, 61, 1) 76%, rgba(65, 66, 71, 1) 100%);
+    animation: bg-animation 5s infinite;
+    user-select: none;
 }
 
 .title-div {
@@ -23,10 +28,24 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 80px;
-    width: 80px;
-    filter: invert(88%) sepia(0%) saturate(40%) hue-rotate(259deg) brightness(91%) contrast(98%);
-    margin-right: 10px;
+    height: 300px;
+    width: 100%;
+    filter: invert(88%) sepia(0%) saturate(40%) hue-rotate(259deg) brightness(100%) contrast(98%);
+    animation-name: logo-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    margin-top: 20px;
+}
+
+@keyframes logo-animation {
+    from {
+        filter: invert(88%) sepia(0%) saturate(40%) hue-rotate(259deg) brightness(100%) contrast(98%);
+    }
+    to {
+        filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(259deg) brightness(0%) contrast(0%);
+    }
 }
 
 .content {
@@ -44,15 +63,15 @@ body {
 
 .title-part1 {
     color: #c9cccc;
-    font-size: 3em;
+    font-size: 10vw;
 }
 
 .title-part2 {
     color: #c9cccc;
-    font-size: 3em;
+    font-size: 10vw;
 }
 
 .subtitle {
     font-family: 'Comfortaa', sans-serif;
-    font-size: 0.9em;
+    font-size: 2vw;
 }
