@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+body {
+    background-color: #252222;
+    color: #dadddd;
+}
+
+.title-div {
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+}
+
+.img-logo {
+    background-image: url('../assets/img/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    filter: invert(88%) sepia(0%) saturate(40%) hue-rotate(259deg) brightness(91%) contrast(98%);
+    margin-right: 10px;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-div {
+    display: flex;
+    align-items: center;
+}
+
+.title-part1 {
+    color: #c9cccc;
+    font-size: 3em;
+}
+
+.title-part2 {
+    color: #c9cccc;
+    font-size: 3em;
+}
+
+.subtitle {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 0.9em;
+}
